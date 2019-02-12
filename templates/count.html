@@ -1,0 +1,11 @@
+<h1>Words count</h1>
+<a href="{% url 'home'%}"> back to home page</a>
+<h3>This is the blocks : </h3>{{textarea}}<br><br>
+<h3>length of list</h3>{{len_word}}
+
+
+<h3>how many times comes item in block</h3>
+{% for key , value in word_dict %}
+{{key}} = {{value}}
+<br>
+{% endfor %}
